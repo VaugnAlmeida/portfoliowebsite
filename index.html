@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/077d1008ae.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Logo 1.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hello, you can call me <span>Vaugn</span>.</p>
+                <h1>I do <span>Graphic</span> Design, <br><span>Social Media</span> Management, <br>and <span>Business</span> Management.</h1>
+            </div>
+        </div>
+    </div>    
+    <!-- -----------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Picture 1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am an Industrial Engineer pursuing a career in Graphic Designing and Social Media Management. I specialize in company brand identity (logos, typography, and color pallets), product graphic designing, developing social media and content strategies, social media campaigns, and social media calendar.<br><br>I love being creative with my work. Whether it's coming up with new ideas for logos or creating graphics for a new product line, I am always up for the challenge of bringing my clients' vision to life.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphic Designer</span><br>Product Graphic Designing & Company Brand Identity</li>
+                            <li><span>Social Media Marketing</span><br>Developing Social Media Content and Calendar</li>
+                            <li><span>Business Management</span><br>Accounting, recruitment, schedule management, payroll, and sales report</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2021 - 2022</span><br>Restaurant Manager - Social Media Manager at Lucia's Kitchen</li>
+                            <li><span>2020 - 2021</span><br>Restaurant Supervisor - Graphic Designer at Pomodoro Restaurant</li>
+                            <li><span>2016 - 2019</span><br>Assistant Manager at Lucia's Café</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2022</span><br>Digital Marketing at HubSpot Academy</li>
+                            <li><span>2022</span><br>Social Media Marketing at HubSpot Academy</li>
+                            <li><span>2015 - 2020</span><br>BS Industrial Engineering at PUP</li>
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <!-- ----------services----------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-sharp fa-solid fa-photo-film"></i>
+                    <h2>Graphic Design</h2>
+                    <p>I offer multiple types of graphic designs. I enhance photos, graphic designs, posters, logos, menu, and more.</p>
+<!--                    <a href="#portfolio">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-hashtag"></i>
+                    <h2>Social Media Management</h2>
+                    <p>I perform social media page setup & management, daily/scheduled posting, hashtag research, content strategy, content calendar, social media advertising, and social media monitoring.</p>
+<!--                    <a href="#portfolio">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-regular fa-copyright"></i>
+                    <h2>Business Management</h2>
+                    <p>I do business startup, product & service costing, business plan, outsourcing, procurement, recruitment, payroll, schedule management, and sales report.</p>
+<!--                    <a href="#portfolio">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------Portfolio----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <video src="Graphic Designs Mockups.mp4" loop autoplay muted></video>
+                    <div class="layer">
+                        <h3>Graphic Design</h3>
+                        <p>Sample work designs I did on my past client. I do product graphic designs, logos, flyers, menu, promos, short videos, reels, and more.</p>
+                        <a href="Graphic Designs Mockups.mp4"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <video src="Buzz Branding.mp4" loop autoplay muted></video>
+                    <div class="layer">
+                        <h3>Business Branding</h3>
+                        <p>I developed brand identity that allows businessess to increase customer loyalty, differentiating the product from the competition, and stablish market leadership.</p>
+                        <a href="Buzz Branding.mp4"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+<!--               <div class="work">
+                    <img src="3.png">
+                    <div class="layer">
+                        <h3>Business Management</h3>
+                        <p>Sample caption</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    --> 
+                </div>
+            </div>
+<!--            <a href="Resume_Vaugn Almeida.pdf" class="btn">See more</a> --> 
+        </div>
+    </div>
+<!-- -----------------contact----------------- -->
+    <div id="Contact">
+        <div class="container">
+            <form action="https://formspree.io/f/mrgdnzqd" method="post" id="my-form">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Hit me up!</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> vj.almeida30@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile"></i> +63 909 203 0913</p>
+                    <div class="social-icons">
+<!--                        <a href="https://www.facebook.com/VJAlmeida30/"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://www.instagram.com/vaugnfire"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/vaugn-almeida"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.twitter.com"><i class="fa-brands fa-square-twitter"></i></a> 
+                        -->
+                    </div> 
+                    <a href="Resume_Vaugn Almeida.pdf" download class="btn btn2">Download CV/Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name"  placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </form>    
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Kevin. Created with <i class="fa-brands fa-html5"></i> by Vaugn Jasper Almeida</p>
+        </div>
+    </div>
+
+
+
+    
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    
+
+    </body>
+</html>
